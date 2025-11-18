@@ -72,19 +72,18 @@
         }
 
         a {
-            color: var(--text-main);
+            color: var(--blue);
             text-decoration: none;
             border-bottom: 1px solid #ccc;
             transition: all 0.2s ease;
         }
 
         a:hover {
-            color: var(--blue);
             border-bottom-color: var(--blue);
         }
 
         section {
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         .post-group {
@@ -170,19 +169,27 @@
 
     <header>
         <h1>Gabe Rigdon<span class="stop"></span></h1>
-        <div class="subtitle">CS Undergraduate at FSU</div>
+        <div class="subtitle">CS Undergrad at FSU</div>
     </header>
 
     <section>
         <h2>About</h2>
         <p>
-            I am a Computer Science student at Florida State University, graduating this December 2025. I am interested in optimization and organization problems.
-        </p>
+            I currently work at 
+            <a href="https://www.dnb.com/en-us/about.html"> Dun & Bradstreet</a>
+            as a security engineer intern on the data security team, working on streamlining tokenization and database monitoring.
         <p>
-            In my free time I enjoy working on cars, cooking, repairing electronics, and spending time with friends & family. 
-        </p>
+            Additionally, I help write code for political science researchers at the 
+            <a href="https://ces.ufl.edu/">Center for European Studies</a> 
+            & the <a href="https://vics.lab.ufl.edu/">Violence, Conflict, and Security Lab</a> at the University of Florida.
         <p>
-            <a href="Gabe_Rigdon_Resume.pdf" target="_blank">Resume (PDF)</a>
+
+        <p>
+            Previously, I worked as a contract lighting designer in FL. I supported lighting for <em>Dirty Heads</em>, <em>Whiskey Myers</em>, and <em>49 Winchester.</em>
+            Programmed with GrandMA3.
+        <p>
+            If you are interested, my resume can be found 
+            <a href="Gabe_Rigdon_Resume.pdf" target="_blank">here.</a>
         </p>
     </section>
 
@@ -193,11 +200,13 @@
             
             <div class="post-item">
                 <div class="post-header" onclick="togglePost('post-1')">
-                    <span class="post-title">This is a post that I will write out one day</span>
-                    <span class="post-date">2025.11.13</span>
+                    <span class="post-title">Running Toyota Dealer Software <em>Techstream</em> on Ubuntu 24.04</span>
+                    <span class="post-date">2025.11.17</span>
                 </div>
                 <div id="post-1" class="post-content">
-                    <p>Here is the text for the post that I will write out one day. Maybe today is the day; maybe it's not the day.</p>
+                    <p>I could not find a tutorial on how to get Techstream running on linux, so I wrote a guide for those interested.
+                        <a href="https://github.com/grigdon/techstream-V12.20.024"> Link.</a>
+                    </p>
                 </div>
             </div>
         </div>
