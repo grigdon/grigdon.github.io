@@ -29,12 +29,27 @@
 
         header {
             margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
             font-size: 1.6rem; 
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             letter-spacing: -0.03em;
             display: inline-flex;
             align-items: center;
@@ -159,6 +174,12 @@
         footer a:hover { color: var(--blue); }
 
         @media (max-width: 600px) {
+            header { 
+                flex-direction: column; 
+                text-align: center; 
+                gap: 16px;
+            }
+            
             .post-header { flex-direction: column-reverse; gap: 5px; }
             .post-date { margin-left: 0; margin-bottom: 4px; }
         }
@@ -168,8 +189,11 @@
 <body>
 
     <header>
-        <h1>Gabe Rigdon<span class="stop"></span></h1>
-        <div class="subtitle">CS Undergrad at FSU</div>
+        <img src="me.jpg" alt="Gabe Rigdon" class="profile-pic">
+        <div class="header-text">
+            <h1>Gabe Rigdon<span class="stop"></span></h1>
+            <div class="subtitle">CS Undergrad at FSU</div>
+        </div> 
     </header>
 
     <section>
@@ -235,5 +259,4 @@
     </script>
 
 </body>
-
 </html>
